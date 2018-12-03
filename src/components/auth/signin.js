@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import SignInForm from './signinForm';
+import BlogTitle from '../blogTitle';
 
 class SignIn extends Component {
 
@@ -11,6 +12,7 @@ class SignIn extends Component {
   render() {
     return (
       <div className='sign-in'>
+        <BlogTitle className='sign-in__blog-title' title='Login' />
         <SignInForm onSubmit={this.onSubmit} className='sign-in__form' />
       </div>
     );

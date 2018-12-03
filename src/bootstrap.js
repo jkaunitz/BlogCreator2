@@ -8,7 +8,6 @@ import reducers from './reducers';
 const createStoreWithMiddleware = applyMiddleware()(compose((window.devToolsExtension ? window.devTollsExtension() : f => f)(createStore)));
 
 import 'bootstrap/dist/css/bootstrap.css';
-import './style/main.scss';
 
 import history from './history';
 
