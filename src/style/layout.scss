@@ -1,0 +1,4 @@
+.layout {
+    display: grid;
+    grid-template-rows: [header-s] [header-e bar-s] [bar-e content-s] [content-e];
+}
