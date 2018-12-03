@@ -1,5 +1,5 @@
 html {
-    font-size: 62.5%; // 1rem is 10px
+    font-size: 62.5%;
 }
 
 *,
@@ -14,3 +14,5 @@ html {
 @import 'layout';
 @import 'header';
 @import 'bar';
+@import 'auth/signin';
+@import 'auth/signup';
