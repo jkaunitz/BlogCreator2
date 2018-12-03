@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose } from 'redux';
 import { Router, Switch, Route } from 'react-router-dom';
-// import reducers from './reducers';
+import reducers from './reducers';
 
 const createStoreWithMiddleware = applyMiddleware()(compose((window.devToolsExtension ? window.devTollsExtension() : f => f)(createStore)));
 
@@ -26,7 +26,7 @@ function main() {
             <Route path='/signin' exact component={SignIn}/>
             <Route path='/signup' exact component={SignUp}/>
           </Switch>
-        </Layout>,
+        </Layout>
       </Router>
     </Provider>
     , document.querySelector('.app-wrapper'));
