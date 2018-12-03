@@ -1,17 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
+import { createStore, applyMiddleware, compose } from 'redux';
 import { Router, Switch, Route } from 'react-router-dom';
 // import reducers from './reducers';
 
-const createStoreWithMiddleware = applyMiddleware()(createStore);
+const createStoreWithMiddleware = applyMiddleware()(compose((window.devToolsExtension ? window.devTollsExtension() : f => f)(createStore)));
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './style/main.scss';
 
-import Layout from './components/layout';
 import history from './history';
 
+import Layout from './components/layout';
 import SignIn from './components/auth/signin';
 import SignUp from './components/auth/signup';
 
