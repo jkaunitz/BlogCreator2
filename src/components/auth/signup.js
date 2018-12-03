@@ -3,6 +3,11 @@ import React, { Component } from 'react';
 import SignUpForm from './signupForm';
 
 class SignUp extends Component {
+
+    onSubmit = (fields) => {
+        console.log(fields);
+    }
+
   render() {
     return (
       <div className='sign-up'>
