@@ -8,8 +8,14 @@ class ForgotEmail extends Component {
 
     render() {
         return(
-            <div className='forgot-email'>
-            </div>
+            <form onSubmit={handleSubmit} className={`${className} forgot-email`}>
+                <Field className='sign-in-form__email'
+                type='email'
+                title='Email'
+                placeholder='Enter Email'
+                name='email'
+                component={FormInput}/>
+            </form>
         );
     }
 }

@@ -8,8 +8,14 @@ class ForgotPassword extends Component {
 
     render() {
         return(
-            <div className='forgot-password'>
-            </div>
+            <form onSubmit={handleSubmit} className={`${className} forgot-password`}>
+                <Field className='sign-in-form__password'
+                type='password'
+                title='Password'
+                placeholder='Enter Password'
+                name='password'
+                component={FormInput}/>
+            </form>
         );
     }
 }

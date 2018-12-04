@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 
 class ForgotSomething extends Component {
     render() {
-        const { links } = this.props;
+        const { className, links } = this.props;
         return (
-            <div className='forgot-something'>
+            <div className={`${className} forgot-something`}>
                 <div className='forgot-something__links'>
                     {
                         links.map(link => {

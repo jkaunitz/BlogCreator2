@@ -1,0 +1,11 @@
+.forgot-something {
+    display: grid;
+
+    &__links {
+        font-size: 18px;
+        display: grid;
+        & > * {
+            text-decoration-line: none;
+        }
+    }
+}
