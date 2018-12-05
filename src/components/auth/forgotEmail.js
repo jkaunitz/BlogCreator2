@@ -23,10 +23,9 @@ class ForgotEmail extends Component {
                 name='email'
                 component={FormInput}/>
                 <Field className='forgot-email__submit-email'
-                onClick={() => console.log('try to submit')}
-                // onClick={() => history.push('/signIn')}
+                onClick={() => history.push('/signIn')}
                 type='submit'
-                title='Login'
+                title='Submit Email'
                 name='submit-email'
                 component={FormButton}/>
             </form>

@@ -4,7 +4,7 @@ import { reduxForm, Field } from 'redux-form';
 
 import { FormInput, FormButton } from '../formFields';
 
-// import history from '../../history';
+import history from '../../history';
 
 class ForgotPassword extends Component {
 
@@ -23,9 +23,9 @@ class ForgotPassword extends Component {
                 name='password'
                 component={FormInput}/>
                 <Field className='forgot-password__submit-password'
-                onClick={() => console.log('try to submit')}
+                onClick={() => history.push('/signIn')}
                 type='submit'
-                title='Login'
+                title='Submit Password'
                 name='submit-password'
                 component={FormButton}/>
             </form>

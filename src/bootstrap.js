@@ -13,10 +13,15 @@ import './style/main.scss';
 import history from './history';
 
 import Layout from './components/layout';
+
+// AUTH
 import SignIn from './components/auth/signIn';
 import SignUp from './components/auth/signUp';
 import ForgotEmail from './components/auth/forgotEmail';
 import ForgotPassword from './components/auth/forgotPassword';
+
+// BLOG
+import Blog from './components/blog';
 
 function main() {
   ReactDOM.render(
@@ -29,6 +34,7 @@ function main() {
             <Route path='/signUp' exact component={SignUp}/>
             <Route path='/forgotEmail' exact component={ForgotEmail}/>
             <Route path='/forgotPassword' exact component={ForgotPassword}/>
+            <Route path='/blog' exact component={Blog}/>
           </Switch>
         </Layout>
       </Router>
