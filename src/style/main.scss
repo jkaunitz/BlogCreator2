@@ -1,5 +1,5 @@
 html {
-    font-size: 62.5%;
+    font-size: 62.5%; // 1rem is 10px
 }
 
 *,
@@ -11,7 +11,11 @@ html {
 }
 
 body {
-    font-family: "Ubuntu", "sans-serif";
+    font-family: 'Ubuntu', 'sans-serif';
+// .app {
+//     margin-top: 2rem;
+//     display: grid;
+//     justify-items: center;
 }
 
 @import 'layout';
@@ -21,8 +25,9 @@ body {
 @import 'auth/signup';
 
 @import 'blog-title';
+
 @import 'form-fields';
 @import 'forgot-something';
 
-@import 'forgot-email';
-@import 'forgot-password';
+@import 'auth/forgot-email';
+@import 'auth/forgot-password';

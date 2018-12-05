@@ -8,7 +8,7 @@ class ForgotSomething extends Component {
                 <div className='forgot-something__links'>
                     {
                         links.map(link => {
-                            return <a key={link._id} onClick={link.onClick} className='forgot-something__link'>{link}</a>
+                            return <a key={link._id} onClick={link.onClick} className='forgot-something__link'></a>
                         })
                     }
                 </div>

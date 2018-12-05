@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { reduxForm, Field } from 'redux-form';
 
 import { FormInput, FormButton } from '../formFields';
-import ForgotSomething from '../forgotsomething';
+import ForgotSomething from '../forgotSomething';
 
 import history from '../../history';
 
@@ -19,12 +19,12 @@ class SignInForm extends Component {
         {
               _id: 1,
               title: 'Forgot email?',
-              onClick: () => history.push('/forgotemail')
+              onClick: () => history.push('/forgotEmail')
         },
         {
               _id: 2,
               title: 'Forgot password?',
-              onClick: () => history.push('/forgotpassword')
+              onClick: () => history.push('/forgotPassword')
         } 
       ]
         return (
