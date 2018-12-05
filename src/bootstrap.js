@@ -13,8 +13,10 @@ import './style/main.scss';
 import history from './history';
 
 import Layout from './components/layout';
-import Signin from './components/auth/signIn';
-import Signup from './components/auth/signUp';
+import SignIn from './components/auth/signIn';
+import SignUp from './components/auth/signUp';
+import ForgotEmail from './components/auth/forgotEmail';
+import ForgotPassword from './components/auth/forgotPassword';
 
 function main() {
   ReactDOM.render(
@@ -25,8 +27,8 @@ function main() {
             <Route path='/' exact component={SignIn}/>
             <Route path='/signIn' exact component={SignIn}/>
             <Route path='/signUp' exact component={SignUp}/>
-            <Route path='/forgotEmail' exact component={Signup}/>
-            <Route path='/forgotPassword' exact component={Signup}/>
+            <Route path='/forgotEmail' exact component={ForgotEmail}/>
+            <Route path='/forgotPassword' exact component={ForgotPassword}/>
           </Switch>
         </Layout>
       </Router>

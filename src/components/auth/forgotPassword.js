@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
 
+import { reduxForm, Field } from 'redux-form';
+
+import { FormInput, FormButton } from '../formFields';
+
+// import history from '../../history';
+
 class ForgotPassword extends Component {
 
     onSubmit = (fields) => {
@@ -7,17 +13,28 @@ class ForgotPassword extends Component {
     }
 
     render() {
+        const { className, handleSubmit } = this.props;
         return(
             <form onSubmit={handleSubmit} className={`${className} forgot-password`}>
-                <Field className='sign-in-form__password'
+                <Field className='forgot-password__password'
                 type='password'
                 title='Password'
                 placeholder='Enter Password'
                 name='password'
                 component={FormInput}/>
+                <Field className='forgot-password__submit-password'
+                onClick={() => console.log('try to submit')}
+                type='submit'
+                title='Login'
+                name='submit-password'
+                component={FormButton}/>
             </form>
         );
     }
 }
+
+ForgotPassword = reduxForm({
+    form: 'ForgotPassword'
+})(ForgotPassword);
 
 export default ForgotPassword;

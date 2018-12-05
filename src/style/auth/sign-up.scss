@@ -2,13 +2,9 @@
     grid-row: content-s/content-e;
     grid-column: s/e;
 
-    &__blog-title {
-
-    }
-
     &__form {
         display: grid;
-        grid-template-rows: [email-s] 84px [email-e password-s] 84px [password-e] [login-s] 32px [login-e];
+        grid-template-rows: [email-s] 84px [email-e password-s] 84px [password-e] [create-account-s] 32px [create-account-e];
         grid-template-columns: 1fr;
     }
 }
@@ -24,16 +20,8 @@
         margin-top: 20px;
         grid-row: password-s/password-e;
     }
-    &__login {
-        margin-top: 48px;
-        grid-row: login-s/login-e;
-    }
-    &__forgot-something {
-        grid-row: 1/-1;
-        justify-self: center;
-        align-self: center;
-    }
     &__create-account {
-        
+        margin-top: 48px;
+        grid-row: create-account-s/create-account-e;
     }
 }

@@ -4,25 +4,29 @@
 
     &__form {
         display: grid;
-        grid-template-rows: [email-s] 56px [email-e password-s] 56px [password-e login-s] 35px [login-e];
+        grid-template-rows: [email-s] 84px [email-e password-s] 84px [password-e login-s] 50px [login-e forgot-something-s] 50px [forgot-something-e];
         grid-template-columns: 1fr;
     }
 }
 
 .sign-in-form {
+    // & > * {
+    //     grid-column: 1/-1;
+    // }
     &__email {
         grid-row: e-mail-s/email-e;
     }
-
     &__password {
+        margin-top: 20px;
         grid-row: password-s/password-e;
     }
-
     &__login {
+        margin-top: 20px;
         grid-row: login-s/login-e;
     }
     &__forgot-something {
-        grid-row: 1/-1;
+        margin-top: 30px;
+        grid-row: forgot-something-s/forgot-something-e;
         justify-self: center;
         align-self: center;
     }

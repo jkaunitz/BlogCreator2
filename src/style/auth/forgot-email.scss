@@ -1,4 +1,12 @@
 .forgot-email {
     grid-row: content-s/content-e;
     grid-column: s/e;
+
+    &__email {
+        grid-row: email-s/email-e;
+    }
+
+    &__submit-email {
+        grid-row: submit-email-s/submit-email-e;
+    }
 }
