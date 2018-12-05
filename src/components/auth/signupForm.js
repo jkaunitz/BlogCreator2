@@ -27,11 +27,11 @@ class SignUpForm extends Component {
             placeholder='Enter Password'
             name='password'
             component={FormInput}/>
-            <Field className='sign-up-form__createaccount'
+            <Field className='sign-up-form__create-account'
             onClick={() => console.log('try to submit')}
             type='submit'
             title='Create Account'
-            name='createaccount'
+            name='create-account'
             component={FormButton}/>
         </form>
     );

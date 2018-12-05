@@ -14,7 +14,7 @@ class SignInForm extends Component {
         {
               _id: 0,
               title: 'Not a user? Please register to sign up',
-              onClick: () => history.push('/signup')
+              onClick: () => history.push('/signUp')
         },
         {
               _id: 1,
@@ -47,7 +47,7 @@ class SignInForm extends Component {
             title='Login'
             name='login'
             component={FormButton}/>
-            <ForgotSomething className='sign-in-form__forgotsomething' links={links}/>
+            <ForgotSomething className='sign-in-form__forgot-something' links={links}/>
         </form>
     );
   }

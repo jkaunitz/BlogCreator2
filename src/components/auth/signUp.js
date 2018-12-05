@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import SignUpForm from './signupForm';
+import SignUpForm from './signUpForm';
 
 class SignUp extends Component {
 

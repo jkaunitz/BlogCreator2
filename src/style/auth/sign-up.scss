@@ -1,0 +1,39 @@
+.sign-up {
+    grid-row: content-s/content-e;
+    grid-column: s/e;
+
+    &__blog-title {
+
+    }
+
+    &__form {
+        display: grid;
+        grid-template-rows: [email-s] 84px [email-e password-s] 84px [password-e] [login-s] 32px [login-e];
+        grid-template-columns: 1fr;
+    }
+}
+
+.sign-up-form {
+    & > * {
+        grid-column: 1/-1;
+    }
+    &__email {
+        grid-row: email-s/email-e;
+    }
+    &__password {
+        margin-top: 20px;
+        grid-row: password-s/password-e;
+    }
+    &__login {
+        margin-top: 48px;
+        grid-row: login-s/login-e;
+    }
+    &__forgot-something {
+        grid-row: 1/-1;
+        justify-self: center;
+        align-self: center;
+    }
+    &__create-account {
+        
+    }
+}
