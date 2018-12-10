@@ -18,16 +18,24 @@ body {
 //     justify-items: center;
 }
 
+// MAIN
 @import 'layout';
 @import 'header';
 @import 'bar';
+
+// AUTH
 @import 'auth/sign-in';
 @import 'auth/sign-in';
 
+// BLOG
 @import 'blog-title';
+@import 'new-blog';
+// @import 'blog';
 
+// 
 @import 'form-fields';
 @import 'forgot-something';
 
+// FORGOT
 @import 'auth/forgot-email';
 @import 'auth/forgot-password';

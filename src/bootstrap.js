@@ -21,7 +21,8 @@ import ForgotEmail from './components/auth/forgotEmail';
 import ForgotPassword from './components/auth/forgotPassword';
 
 // BLOG
-import Blog from './components/blog';
+// import Blog from './components/blog/blog.js';
+import NewBlog from './components/blog/newBlog.js';
 
 function main() {
   ReactDOM.render(
@@ -34,7 +35,8 @@ function main() {
             <Route path='/signUp' exact component={SignUp}/>
             <Route path='/forgotEmail' exact component={ForgotEmail}/>
             <Route path='/forgotPassword' exact component={ForgotPassword}/>
-            <Route path='/blog' exact component={Blog}/>
+            {/* <Route path='/blog' exact component={Blog}/> */}
+            <Route path='/blog/new' exact component={NewBlog}/>
           </Switch>
         </Layout>
       </Router>
