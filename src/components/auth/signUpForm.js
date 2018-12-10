@@ -10,21 +10,18 @@ import history from '../../history';
 class SignUpForm extends Component {
   render() {
       const { className, handleSubmit } = this.props;
-      const links = [
+      const passwordCriteria = [
         {
               _id: 0,
-              title: 'Not a user? Please register to sign up',
-              onClick: () => history.push('/signUp')
+              title: 'Need both lowercase and uppercase',
         },
         {
               _id: 1,
-              title: 'Forgot email?',
-              onClick: () => history.push('/forgotEmail')
+              title: 'Need at least a number',
         },
         {
               _id: 2,
-              title: 'Forgot password?',
-              onClick: () => history.push('/forgotPassword')
+              title: 'Needs at least a character (e.g. @, $, %, #, etc.)'
         } 
       ]
         return (
@@ -48,12 +45,12 @@ class SignUpForm extends Component {
                 name='password'
                 component={FormInput}/>
                 <Field className='sign-up-form__create-account'
-                onClick={() => console.log('try to submit')}
+                onClick={() => history.push('/signIn')}
                 type='submit'
                 title='Create Account'
                 name='create-account'
                 component={FormButton}/>
-                <ForgotSomething className='sign-up-form__details' title='Forgot Something' links={links}/>
+                <ForgotSomething className='sign-up-form__forgot-something' title='Requirements for the following' passwordCriteria={passwordCriteria}/>
             </form>
     );
   }

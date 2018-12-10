@@ -9,7 +9,7 @@
     &__links {
         font-size: 18px;
         display: grid;
-        & > * {
+        .forgot-something__item {
             text-decoration-line: none;
         }
     }
