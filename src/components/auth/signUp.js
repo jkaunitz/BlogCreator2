@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import SignUpForm from './signUpForm';
+import BlogTitle from '../blogTitle';
 
 class SignUp extends Component {
 
@@ -11,6 +12,7 @@ class SignUp extends Component {
   render() {
     return (
       <div className='sign-up'>
+        <BlogTitle className='sign-up__blog-title' title='Create Account' />
         <SignUpForm className='sign-up__form' />
       </div>
     );

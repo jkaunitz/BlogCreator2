@@ -24,4 +24,9 @@
         margin-top: 48px;
         grid-row: create-account-s/create-account-e;
     }
+    &__forgot-something {
+        grid-row: forgot-something-s/forgot-something-e;
+        justify-self: center;
+        align-self: center;
+    }
 }
