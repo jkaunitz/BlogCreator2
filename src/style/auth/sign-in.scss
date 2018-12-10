@@ -10,9 +10,9 @@
 }
 
 .sign-in-form {
-    // & > * {
-    //     grid-column: 1/-1;
-    // }
+    & > * {
+        grid-column: 1/-1;
+    }
     &__email {
         grid-row: e-mail-s/email-e;
     }

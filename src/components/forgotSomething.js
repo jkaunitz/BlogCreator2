@@ -5,7 +5,7 @@ class ForgotSomething extends Component {
         const { title, className, links } = this.props;
         return (
             <div className='forgot-something'>
-                <div className={`${className} forgot-something__title`}></div>
+                <div className={`${className} forgot-something__title`}>{title}</div>
                     <div className='forgot-something__links'>
                         {
                             links.map(link => {
