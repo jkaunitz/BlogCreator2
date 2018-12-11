@@ -8,5 +8,5 @@ export function fetchBlogs() {
 
 return {
     type: SET_BLOGS,
-    
+    payload: response.data
 }

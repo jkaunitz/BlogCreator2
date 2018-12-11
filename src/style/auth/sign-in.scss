@@ -14,14 +14,16 @@
         grid-column: 1/-1;
     }
     &__email {
+        height: 32px;
+        margin-top: 10px;
         grid-row: e-mail-s/email-e;
     }
     &__password {
-        margin-top: 20px;
+        margin-top: 80px;
         grid-row: password-s/password-e;
     }
     &__login {
-        margin-top: 20px;
+        margin-top: 100px;
         grid-row: login-s/login-e;
     }
     &__forgot-something {

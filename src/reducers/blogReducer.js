@@ -1,6 +1,6 @@
 import {
     SET_BLOGS
-} from '../actions/types;'
+} from '../actions/types';
 
 const INITIAL_STATE = {
     blogs: []

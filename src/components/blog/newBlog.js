@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-// import SignInForm from './auth/signInForm'
+// import SignInForm from '../auth/signInForm';
 
 class NewBlog extends Component {
     
@@ -11,7 +11,7 @@ class NewBlog extends Component {
     render() {
         return (
             <div className='new-blog'>
-                <SignInForm onSubmit={(event) => this.onSubmit(event)}/>
+                {/* <SignInForm onSubmit={(event) => this.onSubmit(event)}/> */}
             </div>
         )
     }
