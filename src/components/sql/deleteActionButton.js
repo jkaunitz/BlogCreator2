@@ -1,0 +1,1 @@
+<a onClick={() => this.deleteBlogUser(blogUser)}>Delete</a>
