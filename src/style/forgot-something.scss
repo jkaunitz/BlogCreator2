@@ -1,9 +1,8 @@
 .forgot-something {
-    display: grid;
-
     &__title {
         font-size: 20px;
         font-weight: 600;
+        display: grid;
     }
 
     &__links {

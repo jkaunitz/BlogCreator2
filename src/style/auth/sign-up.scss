@@ -4,8 +4,8 @@
 
     &__form {
         display: grid;
-        grid-template-rows: [name-s] 84px [name-e email-s] 84px [email-e password-s] 84px [password-e] [buttons-s] 32px [buttons-e];
-        grid-template-columns: [cancel-s] 150px [cancel-s create-account-s] 1fr [create-account-e];
+        grid-template-rows: [name-s] 84px [name-e email-s] 84px [email-e password-s] 84px [password-e buttons-s] 40px [buttons-e];
+        grid-template-columns: 1fr;
     }
 }
 
@@ -20,20 +20,16 @@
         grid-row: email-s/email-e;
     }
     &__password {
-        margin-top: 20px;
         grid-row: password-s/password-e;
     }
     &__create-account {
-        margin-top: 48px;
         grid-row: buttons-s/buttons-e;
-        grid-column: create-account-s/create-account-e;
     }
     &__cancel {
         grid-row: buttons-s/buttons-e;
         grid-column: cancel-s/cancel-e;
     }
     &__forgot-something {
-        grid-row: forgot-something-s/forgot-something-e;
         justify-self: center;
         align-self: center;
     }
