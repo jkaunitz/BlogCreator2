@@ -6,7 +6,7 @@ var connection = mysql.createConnection({
   host: '127.0.0.1',
   user: 'root',
   password: 'SJNzoa$135',
-  database: 'Blog'
+  database: 'blog'
 });
 
 app.get('/Blog', (req, res) => {
