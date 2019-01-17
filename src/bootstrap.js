@@ -35,8 +35,10 @@ function main() {
             <Route path='/signUp' exact component={SignUp}/>
             <Route path='/forgotEmail' exact component={ForgotEmail}/>
             <Route path='/forgotPassword' exact component={ForgotPassword}/>
-            <Route path='/blog/new' component={requireAuth(NewBlog)}/>
-            <Route path='/blog/edit/:id' component={requireAuth(EditBlog)}/>
+            {/* <Route path='/blog/new' component={requireAuth(NewBlog)}/>
+            <Route path='/blog/edit/:id' component={requireAuth(EditBlog)}/> */}
+            <Route path='/blog/new' component={NewBlog}/>
+            <Route path='/blog/edit/:id' component={EditBlog}/>
           </Switch>
         </Layout>
       </Router>

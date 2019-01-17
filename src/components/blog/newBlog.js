@@ -26,7 +26,14 @@ class NewBlog extends Component {
     render() {
         return (
             <div className='new-blog'>
-                
+                <NewBlogForm
+                    onCancel={() => this.onCancel()}
+                    onSubmit={(event) => this.onSubmit(event)}
+                    titlePlaceholder = 'Blog Title'
+                    titleTitle = 'Blog Title'
+                    bodyPlaceholder = 'Body'
+                    bodyTitle = 'Body'
+                />
             </div>
         )
     }

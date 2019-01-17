@@ -2,19 +2,41 @@ import React, { Component } from 'react';
 
 export class FormInput extends Component {
   render() {
-      const { className, title, type, placeholder, input } = this.props;
+      const { className, title, input, type, placeholder } = this.props;
         return (
-        <div className={`${className} form-input`}>
-            <label className='form-input__label'>{title}</label>
-            <input className='form-input__input' type={type} placeholder={placeholder} {...input} />
-        </div>
+            <div className={`${className} form-input`}>
+                <label className='form-input__label'>{title}</label>
+                <input 
+                    className='form-input__input' 
+                    type={type} placeholder={placeholder} 
+                    {...input} 
+                    placeholder={placeholder}    
+                />
+            </div>
     )
   }
 }
 
+export class FormTextArea extends Component {
+    render() {
+        const { className, title, input, type, placeholder } = this.props;
+          return (
+              <div className={`${className} form-textarea`}>
+                  <label className='form-textarea__label'>{title}</label>
+                  <textarea 
+                      className='form-textarea__input' 
+                      type={type} placeholder={placeholder} 
+                      {...input} 
+                      placeholder={placeholder}    
+                  />
+              </div>
+      )
+    }
+  }
+
 export class FormButton extends Component {
     render() {
-        const { className, title, type, onClick, input } = this.props;
+        const { className, title, input, type, onClick } = this.props;
           return (
           <div className={`${className} form-button`}>
                 <button className={'form-button__button'}

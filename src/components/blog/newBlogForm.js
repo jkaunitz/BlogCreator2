@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { reduxForm, Field } from 'redux-form';
 
+import { FormTitle } from '../formTitle';
+import { FormInput, FormButton, FormTextArea, FormImage } from '../formFields';
+
 class NewBlogForm extends Component {
     render() {
         const { handleSubmit, formTitle, blogToEdit } = this.props;
@@ -11,6 +14,7 @@ class NewBlogForm extends Component {
 
         return (
             <form onSubmit={handleSubmit} className='new-blog-form'>
+            <FormTitle className='new-blog-form__title' text={formTitle}/>
             <Field
                 className='new-blog-form__blog-title'
                 placeholder={titlePlaceholder}
@@ -24,7 +28,7 @@ class NewBlogForm extends Component {
                 placeholder={bodyPlaceholder}
                 name='body'
                 type='text'
-                title={blogTitle}
+                title={bodyTitle}
                 component={FormTextArea}
             />
             <Field

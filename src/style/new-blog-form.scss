@@ -1,0 +1,25 @@
+.new-blog-form {
+    display: grid;
+
+    &__title {
+        width: 100%;
+    }
+
+    &__blog-title,
+    &__body {
+        grid-column: input-s/input-e;
+    }
+
+    &__body {
+        grid-row: 3;
+    }
+
+    &__submit,
+    &__cancel {
+        grid-row: 1;
+    }
+
+    &__cancel {
+        transform: translateX(-10rem);
+    }
+}
