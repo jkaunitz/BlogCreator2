@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import * as actions from '../../actions';
 
 import SignInForm from './signInForm';
 import BlogTitle from '../blogTitle';
@@ -6,7 +8,7 @@ import BlogTitle from '../blogTitle';
 class SignIn extends Component {
 
     onSubmit = (fields) => {
-        console.log(fields);
+        this.props.signIn(fields);
     }
 
   render() {
@@ -19,4 +21,4 @@ class SignIn extends Component {
   }
 }
 
-export default SignIn;
+export default connect(null, actions)(SignIn);
