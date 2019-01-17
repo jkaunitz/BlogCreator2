@@ -6,7 +6,7 @@ import { FormInput, FormButton, FormTextArea, FormImage } from '../formFields';
 
 class NewBlogForm extends Component {
     render() {
-        const { handleSubmit, formTitle, blogToEdit } = this.props;
+        const { handleSubmit, formTitle } = this.props;
         const {
             titlePlaceholder, titleTitle,
             bodyPlaceholder, bodyTitle
