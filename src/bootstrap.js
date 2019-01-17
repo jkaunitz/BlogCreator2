@@ -7,7 +7,6 @@ import reducers from './reducers';
 
 const createStoreWithMiddleware = applyMiddleware()(compose((window.devToolsExtension ? window.devToolsExtension() : f => f)(createStore)));
 
-import 'bootstrap/dist/css/bootstrap.css';
 import './style/main.scss';
 
 import history from './history';
@@ -15,13 +14,15 @@ import history from './history';
 import Layout from './components/layout';
 
 // AUTH
+import requireAuth from './components/requireAuth';
 import SignIn from './components/auth/signIn';
 import SignUp from './components/auth/signUp';
 import ForgotEmail from './components/auth/forgotEmail';
 import ForgotPassword from './components/auth/forgotPassword';
 
 // BLOG
-import NewBlog from './components/blog/newBlog.js';
+import NewBlog from './components/blog/newBlog';
+import EditBlog from './components/blog/editBlog';
 
 function main() {
   ReactDOM.render(
@@ -34,7 +35,8 @@ function main() {
             <Route path='/signUp' exact component={SignUp}/>
             <Route path='/forgotEmail' exact component={ForgotEmail}/>
             <Route path='/forgotPassword' exact component={ForgotPassword}/>
-            <Route path='/blog/new' exact component={NewBlog}/>
+            <Route path='/blog/new' component={requireAuth(NewBlog)}/>
+            <Route path='/blog/edit/:id' component={requireAuth(EditBlog)}/>
           </Switch>
         </Layout>
       </Router>
