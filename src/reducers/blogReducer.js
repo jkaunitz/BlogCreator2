@@ -1,9 +1,11 @@
 import {
-    SET_BLOGS
+    SET_BLOGS,
+    FETCH_BLOG_ID
 } from '../actions/types';
 
 const INITIAL_STATE = {
-    blogs: []
+    blogs: [],
+    blogEdit: {}
 }
 
 export default function(state = INITIAL_STATE, action) {
@@ -13,6 +15,18 @@ export default function(state = INITIAL_STATE, action) {
             return {
                 ...state,
                 blogs
+            }
+        case FETCH_BLOG_ID:
+            const blogID = action.payload;
+            var blogToEdit = {};
+            state.blogs.map(blog => {
+                if(blog._id == blogID) {
+                    blogToEdit = blog;
+                }
+            })
+            return {
+                ...state,
+                blogToEdit
             }
         default: return state;
     }
