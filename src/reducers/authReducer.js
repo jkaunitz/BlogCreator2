@@ -1,6 +1,6 @@
 import {
     AUTHENTICATE_USER
-} from '../actions.types';
+} from '../actions/types';
 
 const INITIAL_STATE = {
     authenticated: false,
