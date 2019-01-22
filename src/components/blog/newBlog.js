@@ -35,7 +35,7 @@ class NewBlog extends Component {
                     bodyTitle = 'Body'
                 />
             </div>
-        )
+        );
     }
 }
 
