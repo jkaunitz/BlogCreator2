@@ -3,19 +3,20 @@ import { connect } from 'react-redux';
 import * as actions from '../../actions';
 
 import SignUpForm from './signUpForm';
-import BlogTitle from '../blogTitle';
 
 class SignUp extends Component {
 
     onSubmit = (fields) => {
-        console.log(fields);
+      this.props.signUp(fields, () => {
+        console.log('testing');
+        this.props.history.push('/blog');
+      })
     }
 
   render() {
     return (
       <div className='sign-up'>
-        <BlogTitle className='sign-up__blog-title' title='Create Account' />
-        <SignUpForm className='sign-up__form' />
+        <SignUpForm onSubmit={(event) => this.onSubmit(event)} />
       </div>
     );
   }

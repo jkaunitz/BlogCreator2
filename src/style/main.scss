@@ -29,10 +29,13 @@ body {
 
 // BLOG
 @import 'blog-title';
-@import 'new-blog';
-// @import 'blog';
+@import 'blog/new-blog';
+@import 'blog/new-blog-form';
+@import 'blog/archive-blog';
+@import 'blog/latest-blog';
 
-// 
+// HELPERS
+@import 'form-title';
 @import 'form-fields';
 @import 'forgot-something';
 

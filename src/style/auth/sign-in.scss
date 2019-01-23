@@ -1,29 +1,37 @@
 .sign-in {
     grid-row: content-s/content-e;
-    grid-column: s/e;
-
-    &__form {
-        display: grid;
-        grid-template-rows: [email-s] 84px [email-e password-s] 84px [password-e buttons-s] 50px [buttons-e];
-        grid-template-columns: 1fr;
-    }
+    grid-column: content-s/content-e;;
 }
 
 .sign-in-form {
-    & > * {
-        grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: [s] 1fr [input-s] [input-e] 1fr [e];
+    justify-items: center;
+
+    &__title {
+        width: 100%;
+        margin-top: 6.6rem;
+        grid-column: s/e;
     }
+
     &__email {
-        grid-row: email-s/email-e;
+        grid-row: input-s/input-e;
     }
     &__password {
-        grid-row: password-s/password-e;
+        grid-row: input-s/input-e;
     }
     &__login {
-        grid-row: buttons-s/buttons-e;
+        margin-top: 15px;
+        grid-row: input-s/input-e;
     }
     &__forgot-something {
         justify-self: center;
         align-self: center;
+        grid-column: input-s/input-e;
+    }
+
+    &__email,
+    &__password {
+        transform: translateX(-70px);
     }
 }

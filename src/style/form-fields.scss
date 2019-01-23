@@ -1,27 +1,55 @@
-.form-input {
+// INPUT
+
+.form-input,
+.form-textarea {
     display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 3fr 10fr;
 
-    & > * {
-        padding-left: 15px;
-    }
+    align-items: center;
+    width: 100%;
+    justify-content: center;
 
-    &__label {
-        font-size: 16px;
+    &__title {
+        grid-row: 1/-1;
+        grid-column: 1/2;
     }
 
     &__input {
-        box-sizing: border-box;
-        height: 32px;
-        width: 400px;
-        font-size: 20px;
+        grid-row: 1/-1;
+        grid-column: 2/3;
+        height: 4rem;
+        width: 100%;
+        border: 1px solid;
+        border-radius: .5rem;
+        padding-left: 2rem;
+        font-size: 1.6rem;
+        font-weight: 500;
     }
 }
+
+.form-textarea {
+    &__title {
+        align-self: start;
+    }
+    &__input {
+        resize: none;
+        height: 35.5rem;
+        padding-top: 1rem;
+    }
+}
+
+// BUTTON
 
 .form-button {
     &__button {
         height: 30px;
         width: 220px;
+        border-radius: 2rem;
+        border: 1px solid;
 
+        color: purple;
         font-size: 18px;
+        text-align: center;
     }
 }

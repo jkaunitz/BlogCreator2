@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { reduxForm, Field } from 'redux-form';
 
 import { FormTitle } from '../formTitle';
-import { FormInput, FormButton, FormTextArea, FormImage } from '../formFields';
+import { FormInput, FormButton, FormTextArea } from '../formFields';
 
 class NewBlogForm extends Component {
     render() {
@@ -45,13 +45,6 @@ class NewBlogForm extends Component {
                 title='Cancel'
                 component={FormButton}
                 onClick={this.props.onCancel}
-            />
-            <Field
-                className='new-blog-form__image'
-                name='image'
-                type='file'
-                title='Image'
-                component={FormImage}
             />
             </form>
         );

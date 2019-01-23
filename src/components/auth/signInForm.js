@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import { reduxForm, Field } from 'redux-form';
 
+import { FormTitle } from '../formTitle';
 import { FormInput, FormButton } from '../formFields';
 import ForgotSomething from '../forgotSomething';
 
@@ -29,6 +30,7 @@ class SignInForm extends Component {
       ]
         return (
         <form onSubmit={handleSubmit} className={`${className} sign-in-form`}>
+            <FormTitle className='sign-in-form__title' text='Login' />
             <Field className='sign-in-form__email'
             type='email'
             title='Email'

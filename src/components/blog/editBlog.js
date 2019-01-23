@@ -2,17 +2,17 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import * as actions from '../../actions';
 
-import EditBlogForm from './editBlogForm';
+import NewBlogForm from './newBlogForm';
 
 class EditBlog extends Component {
 
     onSubmit = (fields) => {
-        const { title, body, image } = fields;
+        const { title, body } = fields;
 
         var formData = new FormData();
         formData.append('title', title);
         formData.append('body', body);
-        formData.append('image', image);
+        // formData.append('image', image);
 
         this.props.editBlog(this.componentWillMount.match.params.id, fromData, () => {
             this.props.history.push('/blog');
@@ -26,7 +26,14 @@ class EditBlog extends Component {
     render() {
         return(
             <div className='new-blog'>
-            
+                <NewBlogForm
+                    blogToEdit={this.props.blogToEdit}
+                    onCancel={() => this.onCancel()}
+                    onSubmit={(event) => this.onSubmit(event)}
+                    formTitle='Edit Blog'
+                    titleTitle='Blog Title'
+                    bodyTitle='Body'
+                />
             </div>
         )
     }

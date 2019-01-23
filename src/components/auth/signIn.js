@@ -3,19 +3,19 @@ import { connect } from 'react-redux';
 import * as actions from '../../actions';
 
 import SignInForm from './signInForm';
-import BlogTitle from '../blogTitle';
 
 class SignIn extends Component {
 
     onSubmit = (fields) => {
-        this.props.signIn(fields);
+        this.props.signIn(fields, () => {
+          this.props.history.push('/blog');
+        });
     }
 
   render() {
     return (
       <div className='sign-in'>
-        <BlogTitle className='sign-in__blog-title' title='Login' />
-        <SignInForm onSubmit={this.onSubmit} className='sign-in__form' />
+        <SignInForm onSubmit={(event) => this.onSubmit(event)} />
       </div>
     );
   }
