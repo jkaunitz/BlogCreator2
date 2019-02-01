@@ -5,7 +5,7 @@
 
 .sign-in-form {
     display: grid;
-    grid-template-columns: [s] 1fr [input-s] [input-e] 1fr [e];
+    // grid-template-columns: [s] 1fr [input-s] [input-e] 1fr [e];
     justify-items: center;
 
     &__title {

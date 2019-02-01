@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 export function Header({ title, subtitle }) {
   return (
@@ -16,5 +16,3 @@ export function HeaderBar({hideBar}) {
     return <div className='bar'></div>
   }
 }
-
-export default Header;
