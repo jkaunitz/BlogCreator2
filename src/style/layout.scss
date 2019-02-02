@@ -1,5 +1,15 @@
-// .layout {
-//     display: grid;
-//     grid-template-rows: [header-s] 60px [header-e bar-s] 60px [bar-e content-s] 1fr [content-e];
-//     grid-template-columns: [s] 1fr [e];
-// }
+.layout-grid {
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    grid-template-rows: [page-s header-s] 60px [header-e bar-s] auto [bar-e content-s] 1fr [content-e];
+    grid-template-columns: [page-s] 1fr [content-s] 1fr [content-e] 1fr [page-e];
+}
+
+.bar {
+    height: 3rem;
+    background-color: pink;
+    grid-row: bar-s/bar-e;
+    grid-column: page-s/page-e;
+}

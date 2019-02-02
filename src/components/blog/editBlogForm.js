@@ -6,8 +6,6 @@ import { connect } from 'react-redux';
 import { FormTitle } from '../formTitle';
 import { FormInput, FormButton, FormTextArea } from '../formFields';
 
-import { ROOT_URL } from '../../config';
-
 class EditBlogForm extends Component {
     render() {
         const { handleSubmit, formTitle } = this.props;

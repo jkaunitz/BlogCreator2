@@ -6,6 +6,10 @@ import SignInForm from './signInForm';
 
 class SignIn extends Component {
 
+    componentDidMount() {
+      this.props.updateHeader(false);
+    }
+
     onSubmit = (fields) => {
         this.props.signIn(fields, () => {
           this.props.history.push('/blog');

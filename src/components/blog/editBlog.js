@@ -23,6 +23,10 @@ class EditBlog extends Component {
         this.props.history.push('/blog');
     };
 
+    componentDidMount() {
+        this.props.fetchBlogWithId(this.props.match.params.id)
+    }
+
     render() {
         return(
             <div className='new-blog'>

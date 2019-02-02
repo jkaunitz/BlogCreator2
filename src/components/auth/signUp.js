@@ -6,6 +6,10 @@ import SignUpForm from './signUpForm';
 
 class SignUp extends Component {
 
+    componentDidMount() {
+      this.props.updateHeader(false);
+    }
+
     onSubmit = (fields) => {
       this.props.signUp(fields, () => {
         console.log('testing');

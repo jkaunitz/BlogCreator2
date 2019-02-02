@@ -1,22 +1,22 @@
-// html {
-//     font-size: 62.5%; // 1rem is 10px
-// }
+html {
+    font-size: 62.5%; // 1rem is 10px
+}
 
-// *,
-// *::after,
-// *::before {
-//     margin: 0;
-//     padding: 0;
-//     box-sizing: inherit;
-// }
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
 
-// body {
-//     font-family: 'Ubuntu', 'sans-serif';
-// .app {
-//     margin-top: 2rem;
-//     display: grid;
-//     justify-items: center;
-// }
+body {
+    font-family: 'Ubuntu', 'sans-serif';
+    margin-top: 2rem;
+    display: grid;
+    justify-items: center;
+    color: blue;
+}
 
 // MAIN
 @import 'layout';

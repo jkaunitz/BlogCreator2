@@ -10,11 +10,16 @@ import {
     editBlog
 } from './blog';
 
+import {
+    updateHeader
+} from './header';
+
 export {
     SignUp,
     SignIn,
     fetchBlogs,
     fetchBlogWithId,
     createNewBlog,
-    editBlog
+    editBlog,
+    updateHeader
 };

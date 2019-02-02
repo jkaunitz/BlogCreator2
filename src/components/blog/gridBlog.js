@@ -14,6 +14,12 @@ class BlogGrid extends Component {
         this.props.history.push('/blog/new');
     }
 
+    componentDidMount() {
+        setTimeout(() => {
+            this.props.fetchBlogs();
+        }, 1000);
+    }
+
     render() {
         return (
             <div className='grid-blog'>
