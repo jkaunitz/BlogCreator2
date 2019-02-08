@@ -1,37 +1,39 @@
 .sign-in {
-    grid-row: content-s/content-e;
-    grid-column: content-s/content-e;;
+    grid-row: s/e;
+    grid-column: s/e;
 }
 
 .sign-in-form {
     display: grid;
     grid-template-columns: [s] 1fr [input-s] [input-e] 1fr [e];
+    grid-template-rows: [s title-s] 1fr [title-e email-s] 1fr [email-e password-s] 1fr [password-e login-s] 1fr [login-e forgotsomething-s] 1fr [forgotsomething-e];
     justify-items: center;
 
     &__title {
         width: 100%;
-        margin-top: 6.6rem;
         grid-column: s/e;
+        grid-row: title-s/title-e;
     }
 
     &__email {
-        grid-row: input-s/input-e;
+        grid-column: input-s/input-e;
+        grid-row: email-s/email-e;
     }
     &__password {
-        grid-row: input-s/input-e;
+        grid-column: input-s/input-e;
+        grid-row: password-s/password-e;
     }
     &__login {
-        margin-top: 15px;
-        grid-row: input-s/input-e;
+        grid-column: input-s/input-e;
+        grid-row: login-s/login-e;
     }
     &__forgot-something {
-        justify-self: center;
-        align-self: center;
         grid-column: input-s/input-e;
+        grid-row: forgotsomething-s/forgotsomething-e;
     }
 
     &__email,
     &__password {
-        transform: translateX(-70px);
+        transform: translateY(-70px);
     }
 }

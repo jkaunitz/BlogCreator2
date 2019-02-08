@@ -15,7 +15,7 @@ import history from './history';
 import Layout from './components/layout';
 
 // AUTH
-// import requireAuth from './components/requireAuth';
+import requireAuth from './components/requireAuth';
 import SignIn from './components/auth/signIn';
 import SignUp from './components/auth/signUp';
 import ForgotEmail from './components/auth/forgotEmail';
@@ -36,10 +36,10 @@ function main() {
             <Route path='/signUp' component={SignUp}/>
             <Route path='/forgotEmail' component={ForgotEmail}/>
             <Route path='/forgotPassword' component={ForgotPassword}/>
-            {/* <Route path='/blog/new' component={requireAuth(NewBlog)}/>
-            <Route path='/blog/edit/:id' component={requireAuth(EditBlog)}/> */}
-            <Route path='/blog/new' component={NewBlog}/>
-            <Route path='/blog/edit/:id' component={EditBlog}/>
+            <Route path='/blog/new' component={requireAuth(NewBlog)}/>
+            <Route path='/blog/edit/:id' component={requireAuth(EditBlog)}/>
+            {/* <Route path='/blog/new' component={NewBlog}/>
+            <Route path='/blog/edit/:id' component={EditBlog}/> */}
           </Switch>
         </Layout>
       </Router>

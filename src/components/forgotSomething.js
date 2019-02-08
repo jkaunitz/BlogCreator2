@@ -20,7 +20,7 @@ class ForgotSomething extends Component {
     render() {
         const { title, className } = this.props;
         return (
-            <div className='forgot-something'>
+            <div className={`${className} forgot-something`}>
                 <div className={`${className} forgot-something__title`}>{title}</div>
                     <div className='forgot-something__links'>
                         {

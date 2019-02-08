@@ -53,7 +53,8 @@ class SignInForm extends Component {
               component={FormButton}/>
             <ForgotSomething 
               className='sign-in-form__forgot-something' 
-              title='Forgot something' links={links}/>
+              title='Forgot something' 
+            links={links}/>
         </form>
     );
   }

@@ -20,7 +20,7 @@
         grid-column: 2/3;
         height: 4rem;
         width: 100%;
-        border: 1px solid;
+        border: 1px solid blue;
         border-radius: .5rem;
         padding-left: 2rem;
         font-size: 1.6rem;
@@ -45,11 +45,12 @@
     &__button {
         height: 30px;
         width: 220px;
-        border-radius: 2rem;
-        border: 1px solid;
+        border-radius: 5px;
+        border: 1px solid orange;
 
         color: purple;
         font-size: 18px;
+        font-weight: 500;
         text-align: center;
     }
 }
