@@ -15,12 +15,12 @@ class EditBlog extends Component {
         // formData.append('image', image);
 
         this.props.editBlog(this.componentWillMount.match.params.id, fromData, () => {
-            this.props.history.push('/blog');
+            this.props.history.push('/blog/new');
         })
     };
 
     onCancel = () => {
-        this.props.history.push('/blog');
+        this.props.history.push('/blog/new');
     };
 
     componentDidMount() {

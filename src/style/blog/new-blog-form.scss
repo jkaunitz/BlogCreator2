@@ -1,5 +1,7 @@
 .new-blog-form {
     display: grid;
+    grid-template-columns: [s input-s] 950px [input-e] 1fr [e];
+
 
     &__title {
         width: 100%;
@@ -16,10 +18,13 @@
 
     &__submit,
     &__cancel {
+        grid-column: 1/-1;
         grid-row: 1;
+        justify-self: end;
+        align-self: end;
     }
 
     &__cancel {
-        transform: translateX(-10rem);
+        transform: translateX(-175px);
     }
 }

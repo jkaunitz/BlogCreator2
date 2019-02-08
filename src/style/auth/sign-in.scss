@@ -6,7 +6,7 @@
 .sign-in-form {
     display: grid;
     grid-template-columns: [s] 1fr [input-s] [input-e] 1fr [e];
-    grid-template-rows: [s title-s] 1fr [title-e email-s] 1fr [email-e password-s] 1fr [password-e login-s] 1fr [login-e forgotsomething-s] 1fr [forgotsomething-e];
+    grid-template-rows: [s title-s] 35px [title-e email-s] 1fr [email-e password-s] 1fr [password-e login-s] 1fr [login-e forgotsomething-s] 1fr [forgotsomething-e];
     justify-items: center;
 
     &__title {
@@ -30,10 +30,5 @@
     &__forgot-something {
         grid-column: input-s/input-e;
         grid-row: forgotsomething-s/forgotsomething-e;
-    }
-
-    &__email,
-    &__password {
-        transform: translateY(-70px);
     }
 }

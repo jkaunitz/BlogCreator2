@@ -6,7 +6,7 @@
 .sign-up-form {
     display: grid;
     grid-template-columns: [s] 1fr [input-s] [input-e] 1fr [e];
-    grid-template-rows: [s title-s] 1fr [title-e name-s] 1fr [name-e email-s] 1fr [email-e password-s] 1fr [password-e createaccount-s] 1fr [createaccount-e forgotsomething-s] 1fr [forgotsomething-e];
+    grid-template-rows: [s title-s] 35px [title-e name-s] 1fr [name-e email-s] 1fr [email-e password-s] 1fr [password-e createaccount-s] 1fr [createaccount-e forgotsomething-s] 1fr [forgotsomething-e];
     justify-items: center;
     
     &__title {
@@ -34,11 +34,5 @@
     }
     &__forgot-something {
         grid-column: input-s/input-e;
-    }
-    &__name,
-    &__email,
-    &__password
-    {
-        transform: translateY(-70px);
     }
 }

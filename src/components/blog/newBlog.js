@@ -29,9 +29,9 @@ class NewBlog extends Component {
                 <NewBlogForm
                     onCancel={() => this.onCancel()}
                     onSubmit={(event) => this.onSubmit(event)}
-                    titlePlaceholder = 'Blog Title'
+                    titlePlaceholder = 'Type in Blog Title here'
                     titleTitle = 'Blog Title'
-                    bodyPlaceholder = 'Body'
+                    bodyPlaceholder = 'Type in Blog here'
                     bodyTitle = 'Body'
                 />
             </div>

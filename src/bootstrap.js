@@ -32,10 +32,10 @@ function main() {
         <Layout>
           <Switch>
             <Route path='/' exact component={SignIn}/>
-            <Route path='/signIn' component={SignIn}/>
-            <Route path='/signUp' component={SignUp}/>
-            <Route path='/forgotEmail' component={ForgotEmail}/>
-            <Route path='/forgotPassword' component={ForgotPassword}/>
+            <Route path='/signin' component={SignIn}/>
+            <Route path='/signup' component={SignUp}/>
+            <Route path='/forgotemail' component={ForgotEmail}/>
+            <Route path='/forgotpassword' component={ForgotPassword}/>
             <Route path='/blog/new' component={requireAuth(NewBlog)}/>
             <Route path='/blog/edit/:id' component={requireAuth(EditBlog)}/>
             {/* <Route path='/blog/new' component={NewBlog}/>

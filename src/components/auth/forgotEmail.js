@@ -15,7 +15,7 @@ class ForgotEmail extends Component {
     render() {
         const { className, handleSubmit } = this.props;
         return(
-            <form onSubmit={handleSubmit} className={`${className} forgot-email`}>
+            <form onSubmit={handleSubmit} className='forgot-email'>
                 <Field className='forgot-email__email'
                 type='email'
                 title='Email'

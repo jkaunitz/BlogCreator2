@@ -1,13 +1,18 @@
 .forgot-email {
     display: grid;
-    grid-row: content-s/content-e;
+    grid-row: s/e;
     grid-column: s/e;
 
+    grid-template-columns: [s] 1fr [input-s] [input-e] 1fr [e];
+    grid-template-rows: [s] 1fr [email-s] 1fr [email-e submitemail-s] 1fr [submitemail-e] 1fr [e];
+
     &__email {
+        grid-column: input-s/input-e;
         grid-row: email-s/email-e;
     }
 
     &__submit-email {
-        grid-row: submit-email-s/submit-email-e;
+        grid-column: input-s/input-e;
+        grid-row: submitemail-s/submitemail-e;
     }
 }

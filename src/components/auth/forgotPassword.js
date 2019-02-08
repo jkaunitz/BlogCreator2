@@ -15,7 +15,7 @@ class ForgotPassword extends Component {
     render() {
         const { className, handleSubmit } = this.props;
         return(
-            <form onSubmit={handleSubmit} className={`${className} forgot-password`}>
+            <form onSubmit={handleSubmit} className='forgot-password'>
                 <Field className='forgot-password__password'
                 type='password'
                 title='Password'
