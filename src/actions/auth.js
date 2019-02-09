@@ -6,7 +6,7 @@ import {
     AUTHENTICATE_USER
 } from './types';
 
-export function SignUp(fields, success) {
+export function signUp(fields, success) {
     return function(dispatch) {
         axios.post(`${ROOT_URL}/signUp`, fields)
             .then(response => {
@@ -24,7 +24,7 @@ export function SignUp(fields, success) {
     }
 }
 
-export function SignIn(fields, success) {
+export function signIn(fields, success) {
     return function(dispatch) {
         axios.post(`${ROOT_URL}/signIn`, fields)
         .then(response => {
