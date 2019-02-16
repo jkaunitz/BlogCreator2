@@ -4,7 +4,7 @@ import {
 } from './types';
 
 import axios from 'axios';
-// import { ROOT_URL } from '../config';
+import { ROOT_URL } from '../config';
 
 export function fetchBlogs() {
     return function(dispatch) {

@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-// import { ROOT_URL } from '../config';
+import { ROOT_URL } from '../config';
 
 import { 
     AUTHENTICATE_USER
@@ -9,18 +9,18 @@ import {
 export function signUp(fields, success) {
     return function(dispatch) {
         axios.post(`${ROOT_URL}/signUp`, fields)
-            .then(response => {
-                const {token } = response.data;
-                localStorage.setItem('token', token);
-                dispatch({
-                    type: AUTHENTICATE_USER,
-                    payload: response.data
-                })
-                success();
+        .then(response => {
+            const {token } = response.data;
+            localStorage.setItem('token', token);
+            dispatch({
+                type: AUTHENTICATE_USER,
+                payload: response.data
             })
-            .catch(err => {
-                if(err) { console.log(err) }
-            })
+            success();
+        })
+        .catch(err => {
+            if(err) { console.log(err) }
+        })
     }
 }
 

@@ -1,6 +1,6 @@
 import {
-    SignUp,
-    SignIn
+    signUp,
+    signIn
 } from './auth';
 
 import {
@@ -15,8 +15,8 @@ import {
 } from './header';
 
 export {
-    SignUp,
-    SignIn,
+    signUp,
+    signIn,
     fetchBlogs,
     fetchBlogWithId,
     createNewBlog,
